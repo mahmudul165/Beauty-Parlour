@@ -3,7 +3,7 @@ import React from "react";
 
 const HeaderContainer = () => {
   return (
-    <div className="container  ">
+    <div  >
       <div className="justify-content-around align-items-center  row row-cols-1 row-cols-md-3 g-4 m-2 p-2">
         <div className="col m-2 p-2   ">
           <h5 className="fs-2 my-1 p-2">BEAUTY SALON</h5>

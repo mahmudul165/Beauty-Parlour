@@ -3,7 +3,7 @@ import Layout from "../components/layout";
 const about = () => {
   return (
     <>
-      <div className="container  ">
+      <div  style={{ backgroundColor: "#fff8f5" }}>
         <div className="justify-content-around align-items-center  row row-cols-1 row-cols-md-3 g-4 m-2 p-2">
           <div className="col">
             <Image src="/unsplash 1.png" alt="Logo" width={580} height={381} />

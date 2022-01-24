@@ -3,8 +3,8 @@ import Layout from "../components/layout";
 
 const services = () => {
   return (
-    <>
-      <div className="text-center mt-3 p-2    ">
+    <section className="container">
+      <div className="  text-center mt-3 p-2    ">
         <h2 className="fw-bold">
           Our Awesome
           <span style={{ color: "#f63e7b" }} className="mx-2">
@@ -90,7 +90,7 @@ const services = () => {
           </div>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

@@ -16,7 +16,7 @@ const testimonial = () => {
           crossOrigin="anonymous"
         ></link>
       </Head>
-      <div style={{ backgroundColor: "#fff8f5" }}>
+      <div  >
         <div className="text-center mt-3 p-2">
           <h2 className="fw-bold">Testimonial</h2>
         </div>

@@ -49,7 +49,7 @@ const navbar = () => {
     //     </form>
     //   </section>
     // </nav>
-    <nav className="navbar navbar-expand-lg navbar-light  ">
+    <nav   className="container navbar navbar-expand-lg navbar-light  ">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <Image src="/Group 33092.png" alt="Logo" width={128} height={48} />

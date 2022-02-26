@@ -5,7 +5,7 @@ const Layout = ({ children }) => {
   return (
     <div  className="container-fluid">
       <header className={styles.header_bg}>
-        <Navbar />
+        {/* <Navbar /> */}
         <HeaderContainer />
       </header>
       <main>{children}</main>
@@ -13,5 +13,4 @@ const Layout = ({ children }) => {
     </div>
   );
 };
-
 export default Layout;

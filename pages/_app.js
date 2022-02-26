@@ -9,6 +9,7 @@
 import { SessionProvider } from "next-auth/react";
 import Head from "next/head";
 import Script from "next/script";
+import Navbar from "../components/navbar";
 
 function MyApp({  Component, 
   pageProps: { session, ...pageProps } }) {
@@ -30,6 +31,7 @@ function MyApp({  Component,
         integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
         crossorigin="anonymous"
       />
+      <Navbar/>
        <SessionProvider session={session}> 
       <Component {...pageProps} />
       </SessionProvider>

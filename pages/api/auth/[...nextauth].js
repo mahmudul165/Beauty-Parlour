@@ -25,10 +25,13 @@ export default NextAuth({
     //     clientId: process.env.INSTAGRAM_CLIENT_ID,
     //     clientSecret: process.env.INSTAGRAM_CLIENT_SECRET
     //   }),
+    
     // Sign in with passwordless email link
     // EmailProvider({
     //   server: process.env.MAIL_SERVER,
     //   from: "<no-reply@example.com>",
     // }),
   ],
+  
 })
+

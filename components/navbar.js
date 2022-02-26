@@ -1,59 +1,16 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const navbar = () => {
+const Navbar = () => {
   return (
-    // <nav className="navbar navbar-expand-lg navbar-light  ">
-    //   <Image src="/Group 33092.png" alt="Logo" width={50} height={50} />
-    //   <button
-    //     className="navbar-toggler"
-    //     type="button"
-    //     data-toggle="collapse"
-    //     data-target="#navbarTogglerDemo02"
-    //     aria-controls="navbarTogglerDemo02"
-    //     aria-expanded="false"
-    //     aria-label="Toggle navigation"
-    //   >
-    //     <span className="navbar-toggler-icon"></span>
-    //   </button>
-
-    //   <section className="collapse navbar-collapse" id="navbarTogglerDemo02">
-    //     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-    //       <li className="nav-item active">
-    //         <a className="nav-link" href="#">
-    //           Home <span className="sr-only">(current)</span>
-    //         </a>
-    //       </li>
-    //       <li className="nav-item">
-    //         <a className="nav-link" href="#">
-    //           Link
-    //         </a>
-    //       </li>
-    //       <li className="nav-item">
-    //         <a className="nav-link disabled" href="#">
-    //           Disabled
-    //         </a>
-    //       </li>
-    //     </ul>
-    //     <form className="form-inline my-2 my-lg-0">
-    //       <input
-    //         className="form-control mr-sm-2"
-    //         type="search"
-    //         placeholder="Search"
-    //       />
-    //       <button
-    //         className="btn btn-outline-success my-2 my-sm-0"
-    //         type="submit"
-    //       >
-    //         Search
-    //       </button>
-    //     </form>
-    //   </section>
-    // </nav>
+    
     <nav   className="container navbar navbar-expand-lg navbar-light  ">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">
+      <Link  href="/">
+        <a className="navbar-brand"  >
           <Image src="/Group 33092.png" alt="Logo" width={128} height={48} />
-        </a>
+        </a>   
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -72,28 +29,32 @@ const navbar = () => {
           <div>
             <ul className="navbar-nav">
               <li className="nav-item">
+                <Link  href="/">
                 <a
                   className="nav-link active   font-weight-bold"
-                  aria-current="page"
-                  href="#"
+                  aria-current="page"                  
                 >
                   Home
                 </a>
+                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active  " aria-current="page" href="#">
+              <Link  href="/services">
+                <a className="nav-link active  " aria-current="page"  >
                   Services
-                </a>
+                </a>  
+                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+              <Link  href="/testimonial">
+                <a className="nav-link active" aria-current="page" >
                   Our Team
-                </a>
+                </a></Link>
               </li>
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+              <li className="nav-item"> <Link  href="/contact">
+                <a className="nav-link active" aria-current="page" >
                   Contact us
-                </a>
+                </a></Link>
               </li>
               <button
                 width={134}
@@ -111,4 +72,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

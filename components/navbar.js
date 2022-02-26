@@ -56,6 +56,7 @@ const Navbar = () => {
                   Contact us
                 </a></Link>
               </li>
+              <Link  href="/testAuth"> 
               <button
                 width={134}
                 height={45}
@@ -63,7 +64,7 @@ const Navbar = () => {
                 className="btn   text-white  mx-3 p-2"
               >
                 Login
-              </button>
+              </button></Link>
             </ul>
           </div>
         </section>

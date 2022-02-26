@@ -22,18 +22,18 @@ export default function testAuth() {
   if (session) {
       console.log(session.user)
     return (
-      <>
+      <div className="container my-5">
         Signed in as {session.user.email} <br />
-        <button onClick={() => signOut()} className='btn btn-primary me-5'>Sign out</button>
+        <button onClick={() => signOut()} className='btn btn-primary me-5 my-3'  >Sign out</button>
         
-      </>
+      </div>
     )
   }
   return (
-    <>
-      Not signed in <br />
-      <button onClick={() => signIn()}>Google Sign in</button>
-      <button onClick={() => signIn()}>Facebook Sign in</button>
-    </>
+    <div className="container text-center my-5">
+    <div className="my-5">   Not signed in</div> <br />
+      <button className="btn btn-primary mx-5" onClick={() => signIn()}>Google Sign in</button>
+      <button className="btn btn-primary" onClick={() => signIn()}>Facebook Sign in</button>
+    </div>
   )
 }
